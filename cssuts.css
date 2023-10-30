@@ -1,0 +1,413 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #1f1f1f;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #1a1a1a;
+    padding: 10px;
+    position: fixed;
+    box-shadow: 0px 2px 8px 0px rgb(135, 29, 92); 
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 1000;
+    
+   
+}
+
+nav a {
+    color: #d53676;
+    text-decoration: none;
+    padding: 16px 24px;
+    text-align: center;
+    float: right;
+    display: block;
+    margin:0;
+    border-radius: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+nav img{
+    float: left;
+    margin-top: 8px;
+}
+
+nav a:hover {
+    background-color: #c31b74;
+    color: white;
+    transition: 0.5s;
+    border-radius: 32px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: -20px auto;
+    padding: 0px;
+    background-color: #161616;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+.jumbotron {
+text-align: center;
+}
+
+.jumbotron img {
+max-width: 100%;
+height: auto;
+margin-top: 48px;
+border-bottom: 4px solid rgb(188, 28, 70);
+}
+.logo {
+margin-right: 10px; /* Membuat jarak antara logo dan menu */
+height: 40px; /* Menyesuaikan tinggi logo sesuai kebutuhan Anda */
+/* Anda juga dapat menyesuaikan lebar logo jika diperlukan */
+}
+
+.hubungi-button {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #d5196b; /* Warna latar belakang tombol */
+    color: #fff; /* Warna teks tombol */
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-top: -270px;
+    margin-left: 176px;
+    position: absolute;
+    font-weight: 600;
+}
+
+.hubungi-button:hover {
+    background-color: #b12222; /* Warna latar belakang tombol saat hover */
+}
+
+.home-isi{
+    color: white;
+    font-size: 300;
+    margin: 10px 16px;
+    font-size: 20px;
+    line-height: 2;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.quotes{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    margin: 16px 180px;
+}
+
+#contact{
+    scroll-behavior: smooth;
+}
+
+/* profile */
+.profile {
+    display: flex;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+    border-radius: 5px;
+    
+  }
+  
+  .profile img {
+    max-width: 320px;
+    border-radius: 16px;
+    margin-right: 20px;
+  }
+
+  .kataprofile{
+    color: white;
+    max-width: 480px;
+    margin: 128px 64px;
+  }
+
+
+
+
+
+  .containergallery{
+    width: 100%;
+    margin: auto;
+    padding: 16px;
+    background-color: #101010;
+    text-align: center;
+    justify-content: center;
+    margin-right: 64px;
+    }
+    
+    .GALERI{
+        text-align: center;
+        
+    }
+
+    .container h1{
+        color: white;
+    }
+    .GALERI li{
+        width: 320px;
+        height: 160px;
+        overflow:hidden;
+        border: 2px solid #dc3b6e;
+        margin-right: 16px;
+        position: relative;
+        display: inline-block;
+        background-color: white;
+    }
+.GALERI li,
+.GALERI li span{
+    border-radius: 16px;
+
+}
+
+    
+    .GALERI li span{
+        display: block;
+        width: 320px;
+        height: 160px;
+        background-color: rgba(200,200,200,.5);
+        position: absolute;
+        top: 0;
+        text-align: center;
+        line-height: 160px;
+        color: #da2e93;
+        text-shadow: 0px 1px 1px rgb(156, 22, 80);
+        opacity: 0;
+        transform: scale(0) rotate(0);
+        transition: .4s;
+        font-weight: 600;
+        
+    }
+    .GALERI li a:hover span{
+        opacity: 5;
+        transform: scale(1) rotate(360deg);
+
+    }
+    .clear{
+        clear: both;
+    }
+    .overlay{
+        width: 0;
+        height: 0;
+        overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0);
+    z-index: 9999;
+    transition: .4s;
+    text-align: center;
+    padding: 100px 0px;
+    }
+
+    .overlay:target{
+        width: auto;
+        height: auto;
+        bottom: 0;
+        right: 0;
+        background: rgba(0,0,0,.7);
+    }
+
+    .overlay img{
+        max-height: 100% ;
+        box-shadow: 2px 2px 7px rgba(0,0,0,.5);
+    }
+
+    .overlay:target img{
+        animation: fade 1s;
+        border-radius: 0%;
+    }
+
+    .overlay .close {
+        position: absolute;
+        top: 40px;
+        left: 50%;
+        margin-left: -20px;
+        color: aliceblue;
+        text-decoration: none;
+        background-color: black;
+        border: 1px solid white;
+        line-height: 14px;
+        padding: 5px;
+        opacity: 0;
+    }
+
+    .overlay:target .close{
+        animation: SDF .5s .5s forwards;
+    }
+
+    .overlay:target .next,
+    .overlay:target .prev{
+        animation: fade .5s .5s forwards;
+    }
+
+     /*nvigasi */
+     .next, .prev {
+        width: 32px;
+        height: 32px;
+        background-image: url(next.png);
+        background-size: contain;
+        position: absolute;
+        text-indent: -999999px;
+        top:50%;
+        margin-left:  64px;
+        opacity: 0;
+     }
+
+
+     .prev {
+        background-image: url(prev.png);
+        margin-left: -100px;
+     }
+    /* animasi*/
+
+    @keyframes fade {
+        0%{
+            opacity: 0;
+
+        }
+        100%{
+            opacity: 1;
+        }
+        
+    }
+    @keyframes zoomDanFade {
+        0% {
+        transform: scale(0);
+        opacity: 0;
+        }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+@keyframes SDF{
+    0%{
+        opacity: 0;
+        margin-top: -20px;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.Card{
+    height: 320px;
+    width: 320px;
+    padding: 16px 16px;
+    background: #262626;
+    border-radius: 20px;
+    margin: 8px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.Card i{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: rgb(255, 255, 255) ;
+}
+h5{
+    color: rgb(224, 67, 143);
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+.pra p{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+
+}
+
+.contac-me .button-two:hover{
+    background-color: transparent;
+    border: 2px solid rgb(184, 32, 86);
+    cursor: pointer;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: #181818;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer p:nth-child(1){
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+footer p:nth-child(2){
+color: white;
+font-size: 17px;
+width: 500px;
+text-align: center;
+line-height: 26px;
+}
+
+.social{
+    display: flex;
+}
+.social a{
+    width: 45px;
+    height:45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(218, 23, 82);
+    margin: 22px 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.social a:hover{
+    transform: scale(1.3);
+    transition: .3s;
+}
+.end{
+    position: absolute;
+    color: rgb(255, 48, 145);
+    bottom: 35px;
+    font-size: 14px;
+    background-color: #dc3b6e;
+    border-radius: 32px;
+}
